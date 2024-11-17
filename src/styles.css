@@ -1,120 +1,136 @@
 /* Genel Ayarlar */
-    body {
-      font-family: 'Sen', sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #fff;
-      color: #333;
-      transition: background-color 0.3s, color 0.3s;
-    }
+body {
+  font-family: 'Sen', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
 
-    button {
-      font-family: 'Sen', sans-serif;
-    }
+button, marquee {
+  font-family: 'Sen', sans-serif;
+}
 
-    marquee {
-      font-family: 'Sen', sans-serif;
-    }
+.dark-theme {
+  background-color: #333;
+  color: #fff;
+}
 
-    .dark-theme {
-      background-color: #333;
-      color: #fff;
-    }
+/* Container */
+.container {
+  text-align: center;
+}
 
-    .container {
-      text-align: center;
-    }
+.logo img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
 
-    .logo img {
-      width: 100px;
-      height: auto;
-      margin-bottom: 20px;
-    }
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
 
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
+.description {
+  font-size: 1rem;
+  margin: 10px 0 20px;
+}
 
-    .description {
-      font-size: 1rem;
-      margin: 10px 0 20px;
-    }
+/* Başlıklar */
+.small-heading {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #3498db;
+  margin-bottom: 15px;
+}
 
-    .small-heading {
-      font-size: 0.9rem;
-      font-weight: bold;
-      color: #3498db;
-      margin-bottom: 15px;
-    }
+.dark-theme .small-heading {
+  color: #fff;
+}
 
-    .social-icons a {
-      font-size: 1.5rem;
-      color: inherit;
-      margin: 0 10px;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
+/* Sosyal Medya Simgeleri */
+.social-icons a {
+  font-size: 1.5rem;
+  color: inherit;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
 
-    .social-icons a:hover {
-      color: #3498db;
-    }
+.social-icons a:hover {
+  color: #3498db;
+}
 
-    .hire-me {
-      padding: 10px 20px;
-      font-size: 1rem;
-      border: 2px solid #333;
-      border-radius: 25px;
-      background: none;
-      cursor: pointer;
-      transition: all 0.3s;
-    }
+/* Butonlar */
+.hire-me {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 2px solid #333;
+  border-radius: 25px;
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
 
-    .hire-me:hover {
-      background-color: #3498db;
-      color: #fff;
-      border-color: #3498db;
-    }
+.hire-me:hover {
+  background-color: #3498db;
+  color: #fff;
+  border-color: #3498db;
+}
 
-    .dark-theme .small-heading {
-      color: #fff;
-    }
+/* Tema Değiştirici */
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #333;
+  transition: color 0.3s;
+}
 
-    .theme-toggle {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      cursor: pointer;
-      font-size: 1.5rem;
-      color: #333;
-      transition: color 0.3s;
-    }
+.dark-theme .theme-toggle {
+  color: #fff;
+}
 
-    .dark-theme .theme-toggle {
-      color: #fff;
-    }
+/* Dil Çevirme Simgesi */
+.translate-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  z-index: 1000;
+  transition: transform 0.3s, background-color 0.3s;
+}
 
-    .translate-icon {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #fff;
-      border: 1px solid #ddd;
-      border-radius: 50%;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      width: 50px;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      z-index: 1000;
-    }
+.translate-icon:hover {
+  transform: scale(1.1);
+  background-color: #f0f0f0;
+}
 
-    .translate-icon:hover {
-      background-color: #f0f0f0;
-    }
+/* Ek Stil Düzenlemeleri */
+.dark-theme .translate-icon {
+  background-color: #444;
+  border-color: #555;
+}
+
+.dark-theme .translate-icon:hover {
+  background-color: #555;
+}
