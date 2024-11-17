@@ -1,0 +1,21 @@
+{
+  "short_name": "Yiğit KABAK",
+  "name": "YK's Portfolio",
+  "description": "Full-stack geliştirici Yiğit KABAK'ın kişisel portföy sitesi.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#333333",
+  "icons": [
+    {
+      "src": "src/imgs/logo.svg",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "src/imgs/logo.svg",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
