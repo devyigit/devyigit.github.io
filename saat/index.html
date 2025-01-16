@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modern Saat Uygulaması</title>
+  <title>Mobil Uyumlu Saat Uygulaması</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
@@ -16,35 +16,35 @@
 <body class="bg-gray-900 text-white flex flex-col items-center justify-center min-h-screen">
 
   <!-- Saat Ekranı -->
-  <div id="clock" class="text-8xl font-bold"></div>
-  <div id="timezone" class="text-xl mt-4 font-medium"></div>
+  <div id="clock" class="text-6xl sm:text-8xl font-bold text-center"></div>
+  <div id="timezone" class="text-lg sm:text-xl mt-4 font-medium text-center"></div>
 
   <!-- Alt Butonlar -->
-  <div class="w-full mt-auto py-6 bg-gray-800 flex justify-around items-center">
+  <div class="w-full mt-auto py-4 bg-gray-800 flex flex-wrap justify-around items-center gap-4">
     <button 
-      class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md"
+      class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-3 sm:px-4 rounded-md text-sm sm:text-base w-24"
       onclick="changeTimeZone('Europe/Istanbul', 'İstanbul')">
       İstanbul
     </button>
     <button 
-      class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-md"
+      class="bg-green-500 hover:bg-green-600 text-white py-2 px-3 sm:px-4 rounded-md text-sm sm:text-base w-24"
       onclick="changeTimeZone('America/New_York', 'New York')">
       New York
     </button>
     <button 
-      class="bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded-md"
+      class="bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-3 sm:px-4 rounded-md text-sm sm:text-base w-24"
       onclick="changeTimeZone('Asia/Tokyo', 'Tokyo')">
       Tokyo
     </button>
     <button 
-      class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-md"
+      class="bg-red-500 hover:bg-red-600 text-white py-2 px-3 sm:px-4 rounded-md text-sm sm:text-base w-24"
       onclick="changeTimeZone('Europe/London', 'Londra')">
       Londra
     </button>
     <button 
-      class="bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded-md"
+      class="bg-gray-700 hover:bg-gray-600 text-white py-2 px-3 sm:px-4 rounded-md text-sm sm:text-base w-24"
       onclick="toggleTheme()">
-      Tema Değiştir
+      Tema
     </button>
   </div>
 
