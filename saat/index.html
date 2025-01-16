@@ -16,35 +16,37 @@
 <body class="bg-gray-900 text-white flex flex-col items-center justify-center min-h-screen">
 
   <!-- Saat Ekranı -->
-  <div id="clock" class="text-6xl sm:text-8xl font-bold text-center"></div>
-  <div id="timezone" class="text-lg sm:text-xl mt-4 font-medium text-center"></div>
+  <div id="clock-container" class="text-center">
+    <div id="clock" class="text-6xl sm:text-8xl font-bold"></div>
+    <div id="timezone" class="text-lg sm:text-xl mt-4 font-medium"></div>
+  </div>
 
   <!-- Alt Butonlar -->
-  <div class="w-full mt-auto py-4 bg-gray-800 flex flex-wrap justify-around items-center gap-4">
+  <div class="mt-10 grid grid-cols-2 sm:grid-cols-3 gap-4 w-11/12 max-w-md">
     <button 
-      class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-3 sm:px-4 rounded-md text-sm sm:text-base w-24"
+      class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md text-sm sm:text-base"
       onclick="changeTimeZone('Europe/Istanbul', 'İstanbul')">
       İstanbul
     </button>
     <button 
-      class="bg-green-500 hover:bg-green-600 text-white py-2 px-3 sm:px-4 rounded-md text-sm sm:text-base w-24"
+      class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-md text-sm sm:text-base"
       onclick="changeTimeZone('America/New_York', 'New York')">
       New York
     </button>
     <button 
-      class="bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-3 sm:px-4 rounded-md text-sm sm:text-base w-24"
+      class="bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded-md text-sm sm:text-base"
       onclick="changeTimeZone('Asia/Tokyo', 'Tokyo')">
       Tokyo
     </button>
     <button 
-      class="bg-red-500 hover:bg-red-600 text-white py-2 px-3 sm:px-4 rounded-md text-sm sm:text-base w-24"
+      class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-md text-sm sm:text-base"
       onclick="changeTimeZone('Europe/London', 'Londra')">
       Londra
     </button>
     <button 
-      class="bg-gray-700 hover:bg-gray-600 text-white py-2 px-3 sm:px-4 rounded-md text-sm sm:text-base w-24"
+      class="bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded-md text-sm sm:text-base col-span-2"
       onclick="toggleTheme()">
-      Tema
+      Tema Değiştir
     </button>
   </div>
 
