@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Saat Uygulaması</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white flex flex-col items-center justify-center min-h-screen">
+  <!-- Saat Ekranı -->
+  <div id="clock" class="text-8xl font-bold"></div>
+
+  <!-- Alt Butonlar -->
+  <div class="mt-10 flex gap-4">
+    <button 
+      class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md" 
+      onclick="changeClockStyle('classic')">
+      Klasik
+    </button>
+    <button 
+      class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-md" 
+      onclick="changeClockStyle('digital')">
+      Dijital
+    </button>
+    <button 
+      class="bg-purple-500 hover:bg-purple-600 text-white py-2 px-4 rounded-md" 
+      onclick="changeClockStyle('minimal')">
+      Minimal
+    </button>
+  </div>
+
+  <script>
+    // Saat Gösterimi
+    const clock = document.getElementById('clock');
+    function updateClock() {
+      const now = new Date();
+      clock.textContent = now.toLocaleTimeString('tr-TR');
+    }
+    setInterval(updateClock, 1000);
+
+    // Stil Değiştirme
+    function changeClockStyle(style) {
+      if (style === 'classic') {
+        clock.className = 'text-8xl font-bold';
+      } else if (style === 'digital') {
+        clock.className = 'text-8xl font-mono';
+      } else if (style === 'minimal') {
+        clock.className = 'text-6xl font-thin';
+      }
+    }
+    updateClock();
+  </script>
+</body>
+</html>
