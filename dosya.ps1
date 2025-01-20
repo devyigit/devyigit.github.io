@@ -1,0 +1,1 @@
+Get-ChildItem -Filter *.mp3 | Rename-Item -NewName { $_.Name -replace "Spotidl.com - ", "" }
